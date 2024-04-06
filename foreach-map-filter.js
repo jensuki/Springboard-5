@@ -220,11 +220,9 @@ Examples:
 */
 
 function doubleOddNumbers(arr) {
-    const oddNums = arr.filter(num => {
-        return num % 2 !== 0
+    return arr.filter(value => {
+        return value % 2 !== 0
+    }).map(value => {
+        return value * 2;
     })
-    const doubleOddNums = oddNums.map(num => {
-        return num * 2
-    })
-    return doubleOddNums
 }
